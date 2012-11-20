@@ -1,0 +1,7 @@
+Hi, welcome to Dexy
+
+1 + 1 = 2
+
+x = 6
+y = 7
+print x * y

@@ -1,0 +1,5 @@
+Hi, welcome to Dexy
+
+1 + 1 = {{ 1 + 1 }}
+
+{{ d['hello.py'] }}

@@ -1,0 +1,400 @@
+2012-11-20 17:14:49,061 - dexy - DEBUG - looking for doc config files in '.'
+2012-11-20 17:14:49,061 - dexy - DEBUG - Removing any child directories of '.' that match excludes...
+2012-11-20 17:14:49,061 - dexy - DEBUG -   skipping directory './artifacts' because it matches exclude 'artifacts'
+2012-11-20 17:14:49,061 - dexy - DEBUG -   skipping directory './logs' because it matches exclude 'logs'
+2012-11-20 17:14:49,061 - dexy - DEBUG - Removing any child directories of '.' that match excludes...
+2012-11-20 17:14:49,061 - dexy - DEBUG - Removing any child directories of '.' that match excludes...
+2012-11-20 17:14:49,061 - dexy - DEBUG - Removing any child directories of '.' that match excludes...
+2012-11-20 17:14:49,061 - dexy - DEBUG - Removing any child directories of '.' that match excludes...
+2012-11-20 17:14:49,061 - dexy - DEBUG - Removing any child directories of '.' that match excludes...
+2012-11-20 17:14:49,062 - dexy - DEBUG - found doc config file './dexy.txt':
+hello.py|py
+.txt|jinja
+
+2012-11-20 17:14:49,062 - dexy - DEBUG - adding task info for 'doc:hello.py|py'
+2012-11-20 17:14:49,062 - dexy - DEBUG - adding dependency of 'doc:hello.py|py' on 'doc:hello.py|py'
+2012-11-20 17:14:49,062 - dexy - DEBUG - adding task info for 'pattern:*.txt|jinja'
+2012-11-20 17:14:49,062 - dexy - DEBUG - adding dependency of 'doc:hello.py|py' on 'pattern:*.txt|jinja'
+2012-11-20 17:14:49,062 - dexy - DEBUG - adding dependency of 'pattern:*.txt|jinja' on 'pattern:*.txt|jinja'
+2012-11-20 17:14:49,062 - dexy - DEBUG - Removing any child directories of '.' that match excludes...
+2012-11-20 17:14:49,062 - dexy - DEBUG - AST completed:
+2012-11-20 17:14:49,062 - dexy - DEBUG - tree:
+2012-11-20 17:14:49,062 - dexy - DEBUG -   pattern:*.txt|jinja
+2012-11-20 17:14:49,062 - dexy - DEBUG - lookup table:
+2012-11-20 17:14:49,063 - dexy - DEBUG -   doc:hello.py|py: {'children': []}
+2012-11-20 17:14:49,063 - dexy - DEBUG -   pattern:*.txt|jinja: {'children': ['doc:hello.py|py']}
+2012-11-20 17:14:49,063 - dexy - DEBUG - walking AST:
+2012-11-20 17:14:49,063 - dexy - DEBUG - Creating task 'doc:hello.py|py' with children '()' with args '{'wrapper': <dexy.wrapper.Wrapper object at 0x103f980d0>}'
+2012-11-20 17:14:49,063 - dexy - DEBUG - Creating task 'pattern:*.txt|jinja' with children '(Doc:hello.py|py,)' with args '{'wrapper': <dexy.wrapper.Wrapper object at 0x103f980d0>}'
+2012-11-20 17:14:49,066 - dexy - DEBUG - batch id is 1001
+2012-11-20 17:14:49,066 - dexy - DEBUG - running dexy with config:
+2012-11-20 17:14:49,066 - dexy - DEBUG -   artifacts_dir: artifacts
+2012-11-20 17:14:49,066 - dexy - DEBUG -   batch_id: 1001
+2012-11-20 17:14:49,066 - dexy - DEBUG -   batch_info: {'start_time': 1353431689.063456}
+2012-11-20 17:14:49,066 - dexy - DEBUG -   config_file: dexy.conf
+2012-11-20 17:14:49,066 - dexy - DEBUG -   danger: False
+2012-11-20 17:14:49,066 - dexy - DEBUG -   db_alias: sqlite3
+2012-11-20 17:14:49,066 - dexy - DEBUG -   db_file: dexy.sqlite3
+2012-11-20 17:14:49,066 - dexy - DEBUG -   disable_tests: False
+2012-11-20 17:14:49,067 - dexy - DEBUG -   doc_config: OrderedDict([('.', 'hello.py|py\n.txt|jinja\n')])
+2012-11-20 17:14:49,067 - dexy - DEBUG -   dont_use_cache: False
+2012-11-20 17:14:49,067 - dexy - DEBUG -   dry_run: False
+2012-11-20 17:14:49,067 - dexy - DEBUG -   exclude: .git, .svn, tmp, cache
+2012-11-20 17:14:49,067 - dexy - DEBUG -   exclude_also: 
+2012-11-20 17:14:49,067 - dexy - DEBUG -   globals: 
+2012-11-20 17:14:49,067 - dexy - DEBUG -   hashfunction: md5
+2012-11-20 17:14:49,067 - dexy - DEBUG -   ignore_nonzero_exit: False
+2012-11-20 17:14:49,067 - dexy - DEBUG -   log_dir: logs
+2012-11-20 17:14:49,067 - dexy - DEBUG -   log_file: dexy.log
+2012-11-20 17:14:49,067 - dexy - DEBUG -   log_format: %(asctime)s - %(name)s - %(levelname)s - %(message)s
+2012-11-20 17:14:49,067 - dexy - DEBUG -   log_level: DEBUG
+2012-11-20 17:14:49,067 - dexy - DEBUG -   profile: False
+2012-11-20 17:14:49,067 - dexy - DEBUG -   recurse: True
+2012-11-20 17:14:49,067 - dexy - DEBUG -   reports: 
+2012-11-20 17:14:49,067 - dexy - DEBUG -   siblings: False
+2012-11-20 17:14:49,067 - dexy - DEBUG -   silent: False
+2012-11-20 17:14:49,067 - dexy - DEBUG -   state: None
+2012-11-20 17:14:49,068 - dexy - DEBUG -   target: False
+2012-11-20 17:14:49,068 - dexy - DEBUG -   uselocals: False
+2012-11-20 17:14:49,073 - *.txt|jinja - DEBUG - creating child of patterndoc *.txt|jinja: dexy.txt|jinja
+2012-11-20 17:14:49,073 - *.txt|jinja - DEBUG - creating child of patterndoc *.txt|jinja: hello.txt|jinja
+2012-11-20 17:14:49,074 - hello.py - DEBUG - Setting up InitialArtifact:hello.py::Doc:hello.py|py
+2012-11-20 17:14:49,074 - hello.py - DEBUG - Setting hashstring for hello.py to 8eb33896f4aba185bc87ceded293b4cc
+2012-11-20 17:14:49,074 - hello.py - DEBUG - setting up output data of class GenericData
+2012-11-20 17:14:49,074 - dexy - DEBUG - Creating new notification channel 'newchild'
+2012-11-20 17:14:49,074 - hello.py|py - DEBUG - Setting up FilterArtifact:hello.py|py::Doc:hello.py|py
+2012-11-20 17:14:49,085 - hello.py|py - DEBUG - Setting hashstring for hello.py|py to 6831f71da1ee3ed1f8a572b381727552
+2012-11-20 17:14:49,085 - hello.py|py - DEBUG - setting up output data of class GenericData
+2012-11-20 17:14:49,086 - dexy.txt - DEBUG - Setting up InitialArtifact:dexy.txt::Doc:dexy.txt|jinja
+2012-11-20 17:14:49,086 - dexy.txt - DEBUG - Setting up InitialArtifact:dexy.txt::Doc:dexy.txt|jinja
+2012-11-20 17:14:49,086 - dexy.txt - DEBUG - Setting hashstring for dexy.txt to ac2d12d01fa829f8c210329cb3d1fe01
+2012-11-20 17:14:49,086 - dexy.txt - DEBUG - Setting hashstring for dexy.txt to ac2d12d01fa829f8c210329cb3d1fe01
+2012-11-20 17:14:49,086 - dexy.txt - DEBUG - setting up output data of class GenericData
+2012-11-20 17:14:49,086 - dexy.txt - DEBUG - setting up output data of class GenericData
+2012-11-20 17:14:49,087 - dexy.txt|jinja - DEBUG - Setting up FilterArtifact:dexy.txt|jinja::Doc:dexy.txt|jinja
+2012-11-20 17:14:49,087 - dexy.txt|jinja - DEBUG - Setting up FilterArtifact:dexy.txt|jinja::Doc:dexy.txt|jinja
+2012-11-20 17:14:49,087 - dexy.txt|jinja - DEBUG - Setting hashstring for dexy.txt|jinja to f2d3debef06995be015997442d6b3593
+2012-11-20 17:14:49,087 - dexy.txt|jinja - DEBUG - Setting hashstring for dexy.txt|jinja to f2d3debef06995be015997442d6b3593
+2012-11-20 17:14:49,088 - dexy.txt|jinja - DEBUG - setting up output data of class GenericData
+2012-11-20 17:14:49,088 - dexy.txt|jinja - DEBUG - setting up output data of class GenericData
+2012-11-20 17:14:49,088 - hello.txt - DEBUG - Setting up InitialArtifact:hello.txt::Doc:hello.txt|jinja
+2012-11-20 17:14:49,088 - hello.txt - DEBUG - Setting hashstring for hello.txt to d97d294e0aa69f1e74ae05f6d7bc68d0
+2012-11-20 17:14:49,088 - hello.txt - DEBUG - setting up output data of class GenericData
+2012-11-20 17:14:49,089 - hello.txt|jinja - DEBUG - Setting up FilterArtifact:hello.txt|jinja::Doc:hello.txt|jinja
+2012-11-20 17:14:49,089 - hello.txt|jinja - DEBUG - Setting hashstring for hello.txt|jinja to c43a11cde7f74bf36d1254414c861b2d
+2012-11-20 17:14:49,089 - hello.txt|jinja - DEBUG - setting up output data of class GenericData
+2012-11-20 17:14:49,090 - hello.py|py - DEBUG - Running FilterArtifact:hello.py|py::Doc:hello.py|py
+2012-11-20 17:14:49,090 - hello.py|py - DEBUG - Output is not cached under 6831f71da1ee3ed1f8a572b381727552, running...
+2012-11-20 17:14:49,090 - hello.py|py - DEBUG - command line args specified by user are ''
+2012-11-20 17:14:49,091 - hello.py|py - DEBUG - About to run 'python  hello.py ' in 'artifacts/6831f71da1ee3ed1f8a572b381727552/'
+2012-11-20 17:14:49,123 - hello.py|py - DEBUG - stdout is '42
+'
+2012-11-20 17:14:49,123 - hello.py|py - DEBUG - stderr is ''
+2012-11-20 17:14:49,124 - hello.py|py - DEBUG - adding new files found in artifacts/6831f71da1ee3ed1f8a572b381727552 for hello.py|py
+2012-11-20 17:14:49,125 - dexy.txt|jinja - DEBUG - Running FilterArtifact:dexy.txt|jinja::Doc:dexy.txt|jinja
+2012-11-20 17:14:49,125 - dexy.txt|jinja - DEBUG - Running FilterArtifact:dexy.txt|jinja::Doc:dexy.txt|jinja
+2012-11-20 17:14:49,125 - dexy.txt|jinja - DEBUG - Output is not cached under f2d3debef06995be015997442d6b3593, running...
+2012-11-20 17:14:49,125 - dexy.txt|jinja - DEBUG - Output is not cached under f2d3debef06995be015997442d6b3593, running...
+2012-11-20 17:14:49,126 - dexy.txt|jinja - DEBUG - setting up jinja FileSystemLoader with dirs ., artifacts/f2d3debef06995be015997442d6b3593/, artifacts/f2d3debef06995be015997442d6b3593
+2012-11-20 17:14:49,126 - dexy.txt|jinja - DEBUG - setting up jinja FileSystemLoader with dirs ., artifacts/f2d3debef06995be015997442d6b3593/, artifacts/f2d3debef06995be015997442d6b3593
+2012-11-20 17:14:49,126 - dexy.txt|jinja - DEBUG - setting up jinja environment
+2012-11-20 17:14:49,126 - dexy.txt|jinja - DEBUG - setting up jinja environment
+2012-11-20 17:14:49,126 - dexy.txt|jinja - DEBUG - Creating jinja2 environment with: undefined: <class 'jinja2.runtime.StrictUndefined'>, loader: <jinja2.loaders.FileSystemLoader object at 0x103f9d750>
+2012-11-20 17:14:49,126 - dexy.txt|jinja - DEBUG - Creating jinja2 environment with: undefined: <class 'jinja2.runtime.StrictUndefined'>, loader: <jinja2.loaders.FileSystemLoader object at 0x103f9d750>
+2012-11-20 17:14:49,127 - dexy.txt|jinja - DEBUG - initializing template
+2012-11-20 17:14:49,127 - dexy.txt|jinja - DEBUG - initializing template
+2012-11-20 17:14:49,127 - dexy.txt|jinja - DEBUG - Running template plugin PrettyPrintJson
+2012-11-20 17:14:49,127 - dexy.txt|jinja - DEBUG - Running template plugin PrettyPrintJson
+2012-11-20 17:14:49,127 - dexy.txt|jinja - DEBUG - Running template plugin PythonDatetime
+2012-11-20 17:14:49,127 - dexy.txt|jinja - DEBUG - Running template plugin PythonDatetime
+2012-11-20 17:14:49,127 - dexy.txt|jinja - DEBUG - Running template plugin DexyVersion
+2012-11-20 17:14:49,127 - dexy.txt|jinja - DEBUG - Running template plugin DexyVersion
+2012-11-20 17:14:49,127 - dexy.txt|jinja - DEBUG - Running template plugin SimpleJson
+2012-11-20 17:14:49,127 - dexy.txt|jinja - DEBUG - Running template plugin SimpleJson
+2012-11-20 17:14:49,128 - dexy.txt|jinja - DEBUG - Running template plugin PrettyPrinter
+2012-11-20 17:14:49,128 - dexy.txt|jinja - DEBUG - Running template plugin PrettyPrinter
+2012-11-20 17:14:49,128 - dexy.txt|jinja - DEBUG - Running template plugin RegularExpressions
+2012-11-20 17:14:49,128 - dexy.txt|jinja - DEBUG - Running template plugin RegularExpressions
+2012-11-20 17:14:49,128 - dexy.txt|jinja - DEBUG - Running template plugin PythonBuiltins
+2012-11-20 17:14:49,128 - dexy.txt|jinja - DEBUG - Running template plugin PythonBuiltins
+2012-11-20 17:14:49,128 - dexy.txt|jinja - DEBUG - Running template plugin PygmentsStylesheet
+2012-11-20 17:14:49,128 - dexy.txt|jinja - DEBUG - Running template plugin PygmentsStylesheet
+2012-11-20 17:14:49,174 - dexy.txt|jinja - DEBUG - Running template plugin Subdirectories
+2012-11-20 17:14:49,174 - dexy.txt|jinja - DEBUG - Running template plugin Subdirectories
+2012-11-20 17:14:49,175 - dexy.txt|jinja - DEBUG - Running template plugin Variables
+2012-11-20 17:14:49,175 - dexy.txt|jinja - DEBUG - Running template plugin Variables
+2012-11-20 17:14:49,175 - dexy.txt|jinja - DEBUG - Running template plugin Globals
+2012-11-20 17:14:49,175 - dexy.txt|jinja - DEBUG - Running template plugin Globals
+2012-11-20 17:14:49,175 - dexy.txt|jinja - DEBUG - Running template plugin Inputs
+2012-11-20 17:14:49,175 - dexy.txt|jinja - DEBUG - Running template plugin Inputs
+2012-11-20 17:14:49,175 - dexy.txt|jinja - DEBUG - relative refs are ['/hello.py-py.txt', '/hello.py|py', 'hello.py-py.txt', 'hello.py|py']
+2012-11-20 17:14:49,175 - dexy.txt|jinja - DEBUG - relative refs are ['/hello.py-py.txt', '/hello.py|py', 'hello.py-py.txt', 'hello.py|py']
+2012-11-20 17:14:49,175 - dexy.txt|jinja - DEBUG - jinja template data keys are DEXY_VERSION, a, abs, all, any, bin, bool, bytearray, cal, caldates, calendar, callable, chr, cmp, complex, d, datetime, dict, dir, divmod, enumerate, f, filter, float, format, hasattr, hex, highlight, id, int, isinstance, issubclass, iter, json, len, list, long, map, max, min, month, oct, ord, pformat, pow, ppjson, pygments, range, re_match, re_search, reduce, repr, reversed, round, s, set, slice, sorted, str, subdirectories, sum, tc, today, tuple, unicode, w, xrange, year, zip
+2012-11-20 17:14:49,175 - dexy.txt|jinja - DEBUG - jinja template data keys are DEXY_VERSION, a, abs, all, any, bin, bool, bytearray, cal, caldates, calendar, callable, chr, cmp, complex, d, datetime, dict, dir, divmod, enumerate, f, filter, float, format, hasattr, hex, highlight, id, int, isinstance, issubclass, iter, json, len, list, long, map, max, min, month, oct, ord, pformat, pow, ppjson, pygments, range, re_match, re_search, reduce, repr, reversed, round, s, set, slice, sorted, str, subdirectories, sum, tc, today, tuple, unicode, w, xrange, year, zip
+2012-11-20 17:14:49,175 - dexy.txt|jinja - DEBUG - about to create jinja template
+2012-11-20 17:14:49,175 - dexy.txt|jinja - DEBUG - about to create jinja template
+2012-11-20 17:14:49,179 - dexy.txt|jinja - DEBUG - about to process jinja template
+2012-11-20 17:14:49,179 - dexy.txt|jinja - DEBUG - about to process jinja template
+2012-11-20 17:14:49,180 - hello.txt|jinja - DEBUG - Running FilterArtifact:hello.txt|jinja::Doc:hello.txt|jinja
+2012-11-20 17:14:49,180 - hello.txt|jinja - DEBUG - Output is not cached under c43a11cde7f74bf36d1254414c861b2d, running...
+2012-11-20 17:14:49,181 - hello.txt|jinja - DEBUG - setting up jinja FileSystemLoader with dirs ., artifacts/c43a11cde7f74bf36d1254414c861b2d/, artifacts/c43a11cde7f74bf36d1254414c861b2d
+2012-11-20 17:14:49,181 - hello.txt|jinja - DEBUG - setting up jinja environment
+2012-11-20 17:14:49,181 - hello.txt|jinja - DEBUG - Creating jinja2 environment with: undefined: <class 'jinja2.runtime.StrictUndefined'>, loader: <jinja2.loaders.FileSystemLoader object at 0x103f9d910>
+2012-11-20 17:14:49,181 - hello.txt|jinja - DEBUG - initializing template
+2012-11-20 17:14:49,182 - hello.txt|jinja - DEBUG - Running template plugin PrettyPrintJson
+2012-11-20 17:14:49,182 - hello.txt|jinja - DEBUG - Running template plugin PythonDatetime
+2012-11-20 17:14:49,182 - hello.txt|jinja - DEBUG - Running template plugin DexyVersion
+2012-11-20 17:14:49,182 - hello.txt|jinja - DEBUG - Running template plugin SimpleJson
+2012-11-20 17:14:49,182 - hello.txt|jinja - DEBUG - Running template plugin PrettyPrinter
+2012-11-20 17:14:49,182 - hello.txt|jinja - DEBUG - Running template plugin RegularExpressions
+2012-11-20 17:14:49,182 - hello.txt|jinja - DEBUG - Running template plugin PythonBuiltins
+2012-11-20 17:14:49,182 - hello.txt|jinja - DEBUG - Running template plugin PygmentsStylesheet
+2012-11-20 17:14:49,212 - hello.txt|jinja - DEBUG - Running template plugin Subdirectories
+2012-11-20 17:14:49,212 - hello.txt|jinja - DEBUG - Running template plugin Variables
+2012-11-20 17:14:49,213 - hello.txt|jinja - DEBUG - Running template plugin Globals
+2012-11-20 17:14:49,213 - hello.txt|jinja - DEBUG - Running template plugin Inputs
+2012-11-20 17:14:49,213 - hello.txt|jinja - DEBUG - relative refs are ['/dexy.txt-jinja.txt', '/dexy.txt|jinja', '/hello.py-py.txt', '/hello.py|py', 'dexy.txt-jinja.txt', 'dexy.txt|jinja', 'hello.py-py.txt', 'hello.py|py']
+2012-11-20 17:14:49,213 - hello.txt|jinja - DEBUG - jinja template data keys are DEXY_VERSION, a, abs, all, any, bin, bool, bytearray, cal, caldates, calendar, callable, chr, cmp, complex, d, datetime, dict, dir, divmod, enumerate, f, filter, float, format, hasattr, hex, highlight, id, int, isinstance, issubclass, iter, json, len, list, long, map, max, min, month, oct, ord, pformat, pow, ppjson, pygments, range, re_match, re_search, reduce, repr, reversed, round, s, set, slice, sorted, str, subdirectories, sum, tc, today, tuple, unicode, w, xrange, year, zip
+2012-11-20 17:14:49,213 - hello.txt|jinja - DEBUG - about to create jinja template
+2012-11-20 17:14:49,214 - hello.txt|jinja - DEBUG - about to process jinja template
+2012-11-20 17:14:49,217 - dexy - DEBUG - initializing all reporters where ALLREPORTS is True
+2012-11-20 17:14:49,217 - dexy - DEBUG - running reporter output
+2012-11-20 17:14:49,217 - report:output - DEBUG - writing dexy.txt|jinja to output/dexy.txt
+2012-11-20 17:14:49,218 - report:output - DEBUG - writing hello.txt|jinja to output/hello.txt
+2012-11-20 17:14:49,218 - dexy - DEBUG - running reporter long
+2012-11-20 17:14:49,219 - report:long - DEBUG - writing hello.py|py to output-long/hello.py-py.txt
+2012-11-20 17:14:49,219 - report:long - DEBUG - writing dexy.txt|jinja to output-long/dexy.txt-jinja.txt
+2012-11-20 17:14:49,220 - report:long - DEBUG - writing hello.txt|jinja to output-long/hello.txt-jinja.txt
+2012-11-20 17:14:49,220 - dexy - DEBUG - running reporter run
+2012-11-20 17:31:38,564 - dexy - DEBUG - looking for doc config files in '.'
+2012-11-20 17:31:38,564 - dexy - DEBUG - Removing any child directories of '.' that match excludes...
+2012-11-20 17:31:38,564 - dexy - DEBUG -   skipping directory './artifacts' because it matches exclude 'artifacts'
+2012-11-20 17:31:38,564 - dexy - DEBUG -   skipping directory './logs' because it matches exclude 'logs'
+2012-11-20 17:31:38,564 - dexy - DEBUG -   skipping directory './output' because it matches exclude 'output'
+2012-11-20 17:31:38,564 - dexy - DEBUG -   skipping directory './output-long' because it matches exclude 'output-long'
+2012-11-20 17:31:38,564 - dexy - DEBUG - Removing any child directories of '.' that match excludes...
+2012-11-20 17:31:38,564 - dexy - DEBUG - Removing any child directories of '.' that match excludes...
+2012-11-20 17:31:38,565 - dexy - DEBUG - Removing any child directories of '.' that match excludes...
+2012-11-20 17:31:38,565 - dexy - DEBUG - Removing any child directories of '.' that match excludes...
+2012-11-20 17:31:38,565 - dexy - DEBUG - Removing any child directories of '.' that match excludes...
+2012-11-20 17:31:38,565 - dexy - DEBUG - found doc config file './dexy.txt':
+hello.py|py
+hello.py
+hello.txt|jinja
+
+2012-11-20 17:31:38,565 - dexy - DEBUG - adding task info for 'doc:hello.py|py'
+2012-11-20 17:31:38,565 - dexy - DEBUG - adding dependency of 'doc:hello.py|py' on 'doc:hello.py|py'
+2012-11-20 17:31:38,565 - dexy - DEBUG - adding task info for 'doc:hello.py'
+2012-11-20 17:31:38,565 - dexy - DEBUG - adding dependency of 'doc:hello.py|py' on 'doc:hello.py'
+2012-11-20 17:31:38,565 - dexy - DEBUG - adding dependency of 'doc:hello.py' on 'doc:hello.py'
+2012-11-20 17:31:38,565 - dexy - DEBUG - adding task info for 'doc:hello.txt|jinja'
+2012-11-20 17:31:38,566 - dexy - DEBUG - adding dependency of 'doc:hello.py|py' on 'doc:hello.txt|jinja'
+2012-11-20 17:31:38,566 - dexy - DEBUG - adding dependency of 'doc:hello.txt|jinja' on 'doc:hello.txt|jinja'
+2012-11-20 17:31:38,566 - dexy - DEBUG - adding dependency of 'doc:hello.py' on 'doc:hello.txt|jinja'
+2012-11-20 17:31:38,566 - dexy - DEBUG - Removing any child directories of '.' that match excludes...
+2012-11-20 17:31:38,566 - dexy - DEBUG - AST completed:
+2012-11-20 17:31:38,566 - dexy - DEBUG - tree:
+2012-11-20 17:31:38,566 - dexy - DEBUG -   doc:hello.txt|jinja
+2012-11-20 17:31:38,566 - dexy - DEBUG - lookup table:
+2012-11-20 17:31:38,566 - dexy - DEBUG -   doc:hello.py|py: {'children': []}
+2012-11-20 17:31:38,566 - dexy - DEBUG -   doc:hello.txt|jinja: {'children': ['doc:hello.py|py', 'doc:hello.py']}
+2012-11-20 17:31:38,566 - dexy - DEBUG -   doc:hello.py: {'children': ['doc:hello.py|py']}
+2012-11-20 17:31:38,566 - dexy - DEBUG - walking AST:
+2012-11-20 17:31:38,566 - dexy - DEBUG - Creating task 'doc:hello.py|py' with children '()' with args '{'wrapper': <dexy.wrapper.Wrapper object at 0x10da780d0>}'
+2012-11-20 17:31:38,567 - dexy - DEBUG - Creating task 'doc:hello.py' with children '(Doc:hello.py|py,)' with args '{'wrapper': <dexy.wrapper.Wrapper object at 0x10da780d0>}'
+2012-11-20 17:31:38,567 - dexy - DEBUG - Creating task 'doc:hello.txt|jinja' with children '(Doc:hello.py|py, Doc:hello.py)' with args '{'wrapper': <dexy.wrapper.Wrapper object at 0x10da780d0>}'
+2012-11-20 17:31:38,567 - dexy - DEBUG - batch id is 1002
+2012-11-20 17:31:38,567 - dexy - DEBUG - running dexy with config:
+2012-11-20 17:31:38,567 - dexy - DEBUG -   artifacts_dir: artifacts
+2012-11-20 17:31:38,568 - dexy - DEBUG -   batch_id: 1002
+2012-11-20 17:31:38,568 - dexy - DEBUG -   batch_info: {'start_time': 1353432698.567217}
+2012-11-20 17:31:38,568 - dexy - DEBUG -   config_file: dexy.conf
+2012-11-20 17:31:38,568 - dexy - DEBUG -   danger: False
+2012-11-20 17:31:38,568 - dexy - DEBUG -   db_alias: sqlite3
+2012-11-20 17:31:38,568 - dexy - DEBUG -   db_file: dexy.sqlite3
+2012-11-20 17:31:38,568 - dexy - DEBUG -   disable_tests: False
+2012-11-20 17:31:38,568 - dexy - DEBUG -   doc_config: OrderedDict([('.', 'hello.py|py\nhello.py\nhello.txt|jinja\n')])
+2012-11-20 17:31:38,568 - dexy - DEBUG -   dont_use_cache: False
+2012-11-20 17:31:38,568 - dexy - DEBUG -   dry_run: False
+2012-11-20 17:31:38,568 - dexy - DEBUG -   exclude: .git, .svn, tmp, cache
+2012-11-20 17:31:38,569 - dexy - DEBUG -   exclude_also: 
+2012-11-20 17:31:38,569 - dexy - DEBUG -   globals: 
+2012-11-20 17:31:38,569 - dexy - DEBUG -   hashfunction: md5
+2012-11-20 17:31:38,569 - dexy - DEBUG -   ignore_nonzero_exit: False
+2012-11-20 17:31:38,569 - dexy - DEBUG -   log_dir: logs
+2012-11-20 17:31:38,569 - dexy - DEBUG -   log_file: dexy.log
+2012-11-20 17:31:38,569 - dexy - DEBUG -   log_format: %(asctime)s - %(name)s - %(levelname)s - %(message)s
+2012-11-20 17:31:38,569 - dexy - DEBUG -   log_level: DEBUG
+2012-11-20 17:31:38,569 - dexy - DEBUG -   profile: False
+2012-11-20 17:31:38,569 - dexy - DEBUG -   recurse: True
+2012-11-20 17:31:38,569 - dexy - DEBUG -   reports: 
+2012-11-20 17:31:38,569 - dexy - DEBUG -   siblings: False
+2012-11-20 17:31:38,569 - dexy - DEBUG -   silent: False
+2012-11-20 17:31:38,569 - dexy - DEBUG -   state: None
+2012-11-20 17:31:38,569 - dexy - DEBUG -   target: False
+2012-11-20 17:31:38,569 - dexy - DEBUG -   uselocals: False
+2012-11-20 17:31:38,574 - hello.py - DEBUG - Setting up InitialArtifact:hello.py::Doc:hello.py|py
+2012-11-20 17:31:38,574 - hello.py - DEBUG - Setting hashstring for hello.py to 8eb33896f4aba185bc87ceded293b4cc
+2012-11-20 17:31:38,574 - hello.py - DEBUG - setting up output data of class GenericData
+2012-11-20 17:31:38,574 - dexy - DEBUG - Creating new notification channel 'newchild'
+2012-11-20 17:31:38,574 - hello.py|py - DEBUG - Setting up FilterArtifact:hello.py|py::Doc:hello.py|py
+2012-11-20 17:31:38,585 - hello.py|py - DEBUG - Setting hashstring for hello.py|py to 6831f71da1ee3ed1f8a572b381727552
+2012-11-20 17:31:38,585 - hello.py|py - DEBUG - setting up output data of class GenericData
+2012-11-20 17:31:38,586 - hello.py - DEBUG - Setting up InitialArtifact:hello.py::Doc:hello.py
+2012-11-20 17:31:38,586 - hello.py - DEBUG - Setting hashstring for hello.py to 8eb33896f4aba185bc87ceded293b4cc
+2012-11-20 17:31:38,586 - hello.py - DEBUG - setting up output data of class GenericData
+2012-11-20 17:31:38,587 - hello.txt - DEBUG - Setting up InitialArtifact:hello.txt::Doc:hello.txt|jinja
+2012-11-20 17:31:38,587 - hello.txt - DEBUG - Setting hashstring for hello.txt to 14366a286cce589efbe8ea7cd36cd191
+2012-11-20 17:31:38,587 - hello.txt - DEBUG - setting up output data of class GenericData
+2012-11-20 17:31:38,588 - hello.txt|jinja - DEBUG - Setting up FilterArtifact:hello.txt|jinja::Doc:hello.txt|jinja
+2012-11-20 17:31:38,588 - hello.txt|jinja - DEBUG - Setting hashstring for hello.txt|jinja to a6370bafafbacd0220a63618b20fc006
+2012-11-20 17:31:38,588 - hello.txt|jinja - DEBUG - setting up output data of class GenericData
+2012-11-20 17:31:38,589 - hello.py|py - DEBUG - Running FilterArtifact:hello.py|py::Doc:hello.py|py
+2012-11-20 17:31:38,590 - hello.py|py - DEBUG - Output is cached under 6831f71da1ee3ed1f8a572b381727552, reconstituting...
+2012-11-20 17:31:38,591 - hello.txt|jinja - DEBUG - Running FilterArtifact:hello.txt|jinja::Doc:hello.txt|jinja
+2012-11-20 17:31:38,591 - hello.txt|jinja - DEBUG - Output is not cached under a6370bafafbacd0220a63618b20fc006, running...
+2012-11-20 17:31:38,641 - hello.txt|jinja - DEBUG - setting up jinja FileSystemLoader with dirs ., artifacts/a6370bafafbacd0220a63618b20fc006/, artifacts/a6370bafafbacd0220a63618b20fc006
+2012-11-20 17:31:38,642 - hello.txt|jinja - DEBUG - setting up jinja environment
+2012-11-20 17:31:38,642 - hello.txt|jinja - DEBUG - Creating jinja2 environment with: undefined: <class 'jinja2.runtime.StrictUndefined'>, loader: <jinja2.loaders.FileSystemLoader object at 0x10da7e290>
+2012-11-20 17:31:38,642 - hello.txt|jinja - DEBUG - initializing template
+2012-11-20 17:31:38,642 - hello.txt|jinja - DEBUG - Running template plugin PrettyPrintJson
+2012-11-20 17:31:38,642 - hello.txt|jinja - DEBUG - Running template plugin PythonDatetime
+2012-11-20 17:31:38,643 - hello.txt|jinja - DEBUG - Running template plugin DexyVersion
+2012-11-20 17:31:38,643 - hello.txt|jinja - DEBUG - Running template plugin SimpleJson
+2012-11-20 17:31:38,643 - hello.txt|jinja - DEBUG - Running template plugin PrettyPrinter
+2012-11-20 17:31:38,643 - hello.txt|jinja - DEBUG - Running template plugin RegularExpressions
+2012-11-20 17:31:38,643 - hello.txt|jinja - DEBUG - Running template plugin PythonBuiltins
+2012-11-20 17:31:38,643 - hello.txt|jinja - DEBUG - Running template plugin PygmentsStylesheet
+2012-11-20 17:31:38,687 - hello.txt|jinja - DEBUG - Running template plugin Subdirectories
+2012-11-20 17:31:38,688 - hello.txt|jinja - DEBUG - Running template plugin Variables
+2012-11-20 17:31:38,688 - hello.txt|jinja - DEBUG - Running template plugin Globals
+2012-11-20 17:31:38,688 - hello.txt|jinja - DEBUG - Running template plugin Inputs
+2012-11-20 17:31:38,688 - hello.txt|jinja - DEBUG - relative refs are ['/hello.py', '/hello.py-py.txt', '/hello.py|py', 'hello.py', 'hello.py-py.txt', 'hello.py|py']
+2012-11-20 17:31:38,688 - hello.txt|jinja - DEBUG - jinja template data keys are DEXY_VERSION, a, abs, all, any, bin, bool, bytearray, cal, caldates, calendar, callable, chr, cmp, complex, d, datetime, dict, dir, divmod, enumerate, f, filter, float, format, hasattr, hex, highlight, id, int, isinstance, issubclass, iter, json, len, list, long, map, max, min, month, oct, ord, pformat, pow, ppjson, pygments, range, re_match, re_search, reduce, repr, reversed, round, s, set, slice, sorted, str, subdirectories, sum, tc, today, tuple, unicode, w, xrange, year, zip
+2012-11-20 17:31:38,689 - hello.txt|jinja - DEBUG - about to create jinja template
+2012-11-20 17:31:38,716 - hello.txt|jinja - DEBUG - about to process jinja template
+2012-11-20 17:31:38,718 - dexy - DEBUG - initializing all reporters where ALLREPORTS is True
+2012-11-20 17:31:38,718 - dexy - DEBUG - running reporter output
+2012-11-20 17:31:38,719 - report:output - DEBUG - writing hello.py to output/hello.py
+2012-11-20 17:31:38,719 - report:output - DEBUG - writing hello.txt|jinja to output/hello.txt
+2012-11-20 17:31:38,720 - dexy - DEBUG - running reporter long
+2012-11-20 17:31:38,720 - report:long - DEBUG - writing hello.py|py to output-long/hello.py-py.txt
+2012-11-20 17:31:38,721 - report:long - DEBUG - writing hello.py to output-long/hello.py
+2012-11-20 17:31:38,721 - report:long - DEBUG - writing hello.txt|jinja to output-long/hello.txt-jinja.txt
+2012-11-20 17:31:38,722 - dexy - DEBUG - running reporter run
+2012-11-20 17:32:52,823 - dexy - DEBUG - looking for doc config files in '.'
+2012-11-20 17:32:52,823 - dexy - DEBUG - Removing any child directories of '.' that match excludes...
+2012-11-20 17:32:52,823 - dexy - DEBUG -   skipping directory './artifacts' because it matches exclude 'artifacts'
+2012-11-20 17:32:52,823 - dexy - DEBUG -   skipping directory './logs' because it matches exclude 'logs'
+2012-11-20 17:32:52,823 - dexy - DEBUG -   skipping directory './output' because it matches exclude 'output'
+2012-11-20 17:32:52,823 - dexy - DEBUG -   skipping directory './output-long' because it matches exclude 'output-long'
+2012-11-20 17:32:52,823 - dexy - DEBUG - Removing any child directories of '.' that match excludes...
+2012-11-20 17:32:52,823 - dexy - DEBUG - Removing any child directories of '.' that match excludes...
+2012-11-20 17:32:52,823 - dexy - DEBUG - Removing any child directories of '.' that match excludes...
+2012-11-20 17:32:52,824 - dexy - DEBUG - Removing any child directories of '.' that match excludes...
+2012-11-20 17:32:52,824 - dexy - DEBUG - Removing any child directories of '.' that match excludes...
+2012-11-20 17:32:52,824 - dexy - DEBUG - found doc config file './dexy.txt':
+hello.py|py
+hello.py
+hello.txt|jinja
+
+2012-11-20 17:32:52,824 - dexy - DEBUG - adding task info for 'doc:hello.py|py'
+2012-11-20 17:32:52,824 - dexy - DEBUG - adding dependency of 'doc:hello.py|py' on 'doc:hello.py|py'
+2012-11-20 17:32:52,824 - dexy - DEBUG - adding task info for 'doc:hello.py'
+2012-11-20 17:32:52,824 - dexy - DEBUG - adding dependency of 'doc:hello.py|py' on 'doc:hello.py'
+2012-11-20 17:32:52,824 - dexy - DEBUG - adding dependency of 'doc:hello.py' on 'doc:hello.py'
+2012-11-20 17:32:52,824 - dexy - DEBUG - adding task info for 'doc:hello.txt|jinja'
+2012-11-20 17:32:52,824 - dexy - DEBUG - adding dependency of 'doc:hello.py|py' on 'doc:hello.txt|jinja'
+2012-11-20 17:32:52,825 - dexy - DEBUG - adding dependency of 'doc:hello.txt|jinja' on 'doc:hello.txt|jinja'
+2012-11-20 17:32:52,825 - dexy - DEBUG - adding dependency of 'doc:hello.py' on 'doc:hello.txt|jinja'
+2012-11-20 17:32:52,825 - dexy - DEBUG - Removing any child directories of '.' that match excludes...
+2012-11-20 17:32:52,825 - dexy - DEBUG - AST completed:
+2012-11-20 17:32:52,825 - dexy - DEBUG - tree:
+2012-11-20 17:32:52,825 - dexy - DEBUG -   doc:hello.txt|jinja
+2012-11-20 17:32:52,825 - dexy - DEBUG - lookup table:
+2012-11-20 17:32:52,825 - dexy - DEBUG -   doc:hello.py|py: {'children': []}
+2012-11-20 17:32:52,825 - dexy - DEBUG -   doc:hello.txt|jinja: {'children': ['doc:hello.py|py', 'doc:hello.py']}
+2012-11-20 17:32:52,825 - dexy - DEBUG -   doc:hello.py: {'children': ['doc:hello.py|py']}
+2012-11-20 17:32:52,826 - dexy - DEBUG - walking AST:
+2012-11-20 17:32:52,826 - dexy - DEBUG - Creating task 'doc:hello.py|py' with children '()' with args '{'wrapper': <dexy.wrapper.Wrapper object at 0x1030c30d0>}'
+2012-11-20 17:32:52,826 - dexy - DEBUG - Creating task 'doc:hello.py' with children '(Doc:hello.py|py,)' with args '{'wrapper': <dexy.wrapper.Wrapper object at 0x1030c30d0>}'
+2012-11-20 17:32:52,826 - dexy - DEBUG - Creating task 'doc:hello.txt|jinja' with children '(Doc:hello.py|py, Doc:hello.py)' with args '{'wrapper': <dexy.wrapper.Wrapper object at 0x1030c30d0>}'
+2012-11-20 17:32:52,827 - dexy - DEBUG - batch id is 1003
+2012-11-20 17:32:52,827 - dexy - DEBUG - running dexy with config:
+2012-11-20 17:32:52,827 - dexy - DEBUG -   artifacts_dir: artifacts
+2012-11-20 17:32:52,827 - dexy - DEBUG -   batch_id: 1003
+2012-11-20 17:32:52,828 - dexy - DEBUG -   batch_info: {'start_time': 1353432772.826733}
+2012-11-20 17:32:52,828 - dexy - DEBUG -   config_file: dexy.conf
+2012-11-20 17:32:52,828 - dexy - DEBUG -   danger: False
+2012-11-20 17:32:52,828 - dexy - DEBUG -   db_alias: sqlite3
+2012-11-20 17:32:52,828 - dexy - DEBUG -   db_file: dexy.sqlite3
+2012-11-20 17:32:52,828 - dexy - DEBUG -   disable_tests: False
+2012-11-20 17:32:52,828 - dexy - DEBUG -   doc_config: OrderedDict([('.', 'hello.py|py\nhello.py\nhello.txt|jinja\n')])
+2012-11-20 17:32:52,828 - dexy - DEBUG -   dont_use_cache: False
+2012-11-20 17:32:52,828 - dexy - DEBUG -   dry_run: False
+2012-11-20 17:32:52,828 - dexy - DEBUG -   exclude: .git, .svn, tmp, cache
+2012-11-20 17:32:52,828 - dexy - DEBUG -   exclude_also: 
+2012-11-20 17:32:52,828 - dexy - DEBUG -   globals: 
+2012-11-20 17:32:52,828 - dexy - DEBUG -   hashfunction: md5
+2012-11-20 17:32:52,828 - dexy - DEBUG -   ignore_nonzero_exit: False
+2012-11-20 17:32:52,828 - dexy - DEBUG -   log_dir: logs
+2012-11-20 17:32:52,828 - dexy - DEBUG -   log_file: dexy.log
+2012-11-20 17:32:52,828 - dexy - DEBUG -   log_format: %(asctime)s - %(name)s - %(levelname)s - %(message)s
+2012-11-20 17:32:52,829 - dexy - DEBUG -   log_level: DEBUG
+2012-11-20 17:32:52,829 - dexy - DEBUG -   profile: False
+2012-11-20 17:32:52,829 - dexy - DEBUG -   recurse: True
+2012-11-20 17:32:52,829 - dexy - DEBUG -   reports: 
+2012-11-20 17:32:52,829 - dexy - DEBUG -   siblings: False
+2012-11-20 17:32:52,829 - dexy - DEBUG -   silent: False
+2012-11-20 17:32:52,829 - dexy - DEBUG -   state: None
+2012-11-20 17:32:52,829 - dexy - DEBUG -   target: False
+2012-11-20 17:32:52,829 - dexy - DEBUG -   uselocals: False
+2012-11-20 17:32:52,834 - hello.py - DEBUG - Setting up InitialArtifact:hello.py::Doc:hello.py|py
+2012-11-20 17:32:52,834 - hello.py - DEBUG - Setting hashstring for hello.py to 8eb33896f4aba185bc87ceded293b4cc
+2012-11-20 17:32:52,834 - hello.py - DEBUG - setting up output data of class GenericData
+2012-11-20 17:32:52,834 - dexy - DEBUG - Creating new notification channel 'newchild'
+2012-11-20 17:32:52,834 - hello.py|py - DEBUG - Setting up FilterArtifact:hello.py|py::Doc:hello.py|py
+2012-11-20 17:32:52,844 - hello.py|py - DEBUG - Setting hashstring for hello.py|py to 6831f71da1ee3ed1f8a572b381727552
+2012-11-20 17:32:52,845 - hello.py|py - DEBUG - setting up output data of class GenericData
+2012-11-20 17:32:52,846 - hello.py - DEBUG - Setting up InitialArtifact:hello.py::Doc:hello.py
+2012-11-20 17:32:52,846 - hello.py - DEBUG - Setting hashstring for hello.py to 8eb33896f4aba185bc87ceded293b4cc
+2012-11-20 17:32:52,846 - hello.py - DEBUG - setting up output data of class GenericData
+2012-11-20 17:32:52,846 - hello.txt - DEBUG - Setting up InitialArtifact:hello.txt::Doc:hello.txt|jinja
+2012-11-20 17:32:52,847 - hello.txt - DEBUG - Setting hashstring for hello.txt to 6d0f58a0df51afcc745a0e007bc7ebb0
+2012-11-20 17:32:52,847 - hello.txt - DEBUG - setting up output data of class GenericData
+2012-11-20 17:32:52,847 - hello.txt|jinja - DEBUG - Setting up FilterArtifact:hello.txt|jinja::Doc:hello.txt|jinja
+2012-11-20 17:32:52,848 - hello.txt|jinja - DEBUG - Setting hashstring for hello.txt|jinja to c255cfc853f5517e0ed9fe8eb7630a24
+2012-11-20 17:32:52,848 - hello.txt|jinja - DEBUG - setting up output data of class GenericData
+2012-11-20 17:32:52,849 - hello.py|py - DEBUG - Running FilterArtifact:hello.py|py::Doc:hello.py|py
+2012-11-20 17:32:52,849 - hello.py|py - DEBUG - Output is cached under 6831f71da1ee3ed1f8a572b381727552, reconstituting...
+2012-11-20 17:32:52,850 - hello.txt|jinja - DEBUG - Running FilterArtifact:hello.txt|jinja::Doc:hello.txt|jinja
+2012-11-20 17:32:52,851 - hello.txt|jinja - DEBUG - Output is not cached under c255cfc853f5517e0ed9fe8eb7630a24, running...
+2012-11-20 17:32:52,852 - hello.txt|jinja - DEBUG - setting up jinja FileSystemLoader with dirs ., artifacts/c255cfc853f5517e0ed9fe8eb7630a24/, artifacts/c255cfc853f5517e0ed9fe8eb7630a24
+2012-11-20 17:32:52,852 - hello.txt|jinja - DEBUG - setting up jinja environment
+2012-11-20 17:32:52,852 - hello.txt|jinja - DEBUG - Creating jinja2 environment with: undefined: <class 'jinja2.runtime.StrictUndefined'>, loader: <jinja2.loaders.FileSystemLoader object at 0x1030c9290>
+2012-11-20 17:32:52,852 - hello.txt|jinja - DEBUG - initializing template
+2012-11-20 17:32:52,852 - hello.txt|jinja - DEBUG - Running template plugin PrettyPrintJson
+2012-11-20 17:32:52,853 - hello.txt|jinja - DEBUG - Running template plugin PythonDatetime
+2012-11-20 17:32:52,853 - hello.txt|jinja - DEBUG - Running template plugin DexyVersion
+2012-11-20 17:32:52,853 - hello.txt|jinja - DEBUG - Running template plugin SimpleJson
+2012-11-20 17:32:52,853 - hello.txt|jinja - DEBUG - Running template plugin PrettyPrinter
+2012-11-20 17:32:52,853 - hello.txt|jinja - DEBUG - Running template plugin RegularExpressions
+2012-11-20 17:32:52,853 - hello.txt|jinja - DEBUG - Running template plugin PythonBuiltins
+2012-11-20 17:32:52,853 - hello.txt|jinja - DEBUG - Running template plugin PygmentsStylesheet
+2012-11-20 17:32:52,898 - hello.txt|jinja - DEBUG - Running template plugin Subdirectories
+2012-11-20 17:32:52,899 - hello.txt|jinja - DEBUG - Running template plugin Variables
+2012-11-20 17:32:52,899 - hello.txt|jinja - DEBUG - Running template plugin Globals
+2012-11-20 17:32:52,899 - hello.txt|jinja - DEBUG - Running template plugin Inputs
+2012-11-20 17:32:52,899 - hello.txt|jinja - DEBUG - relative refs are ['/hello.py', '/hello.py-py.txt', '/hello.py|py', 'hello.py', 'hello.py-py.txt', 'hello.py|py']
+2012-11-20 17:32:52,900 - hello.txt|jinja - DEBUG - jinja template data keys are DEXY_VERSION, a, abs, all, any, bin, bool, bytearray, cal, caldates, calendar, callable, chr, cmp, complex, d, datetime, dict, dir, divmod, enumerate, f, filter, float, format, hasattr, hex, highlight, id, int, isinstance, issubclass, iter, json, len, list, long, map, max, min, month, oct, ord, pformat, pow, ppjson, pygments, range, re_match, re_search, reduce, repr, reversed, round, s, set, slice, sorted, str, subdirectories, sum, tc, today, tuple, unicode, w, xrange, year, zip
+2012-11-20 17:32:52,900 - hello.txt|jinja - DEBUG - about to create jinja template
+2012-11-20 17:32:52,905 - hello.txt|jinja - DEBUG - about to process jinja template
+2012-11-20 17:32:52,907 - dexy - DEBUG - initializing all reporters where ALLREPORTS is True
+2012-11-20 17:32:52,907 - dexy - DEBUG - running reporter output
+2012-11-20 17:32:52,908 - report:output - DEBUG - writing hello.py to output/hello.py
+2012-11-20 17:32:52,908 - report:output - DEBUG - writing hello.txt|jinja to output/hello.txt
+2012-11-20 17:32:52,909 - dexy - DEBUG - running reporter long
+2012-11-20 17:32:52,910 - report:long - DEBUG - writing hello.py|py to output-long/hello.py-py.txt
+2012-11-20 17:32:52,910 - report:long - DEBUG - writing hello.py to output-long/hello.py
+2012-11-20 17:32:52,910 - report:long - DEBUG - writing hello.txt|jinja to output-long/hello.txt-jinja.txt
+2012-11-20 17:32:52,911 - dexy - DEBUG - running reporter run
